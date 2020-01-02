@@ -60,8 +60,6 @@ $screen-lg-max: 1200px;
             max-width: 612px;
         }
     }
-    
-
     .type-of-repair__blocks .type-of-repair__blocks-item {
         img{
             max-width: 320px;  
@@ -75,9 +73,7 @@ $screen-lg-max: 1200px;
             }
         }
     }
-
 }
-
 @media (max-width: 1254px) {
     .type-of-repair__inner 
     .type-of-repair__block-container 
@@ -116,8 +112,7 @@ $screen-lg-max: 1200px;
             .type-of-repair__order-number-content{
                 background-color: transparent;
             }
-        }
-                
+        }              
         .type-of-repair__order-number-circle04{
             margin-left: 310px;
         }
@@ -144,7 +139,6 @@ $screen-lg-max: 1200px;
             }
         }
     }
-
     .fantasies__sliderimgs-content {
         .fantasies__sliderimgs-firstcontent{
             
@@ -158,8 +152,7 @@ $screen-lg-max: 1200px;
                 img{
                     max-width: 280px;
                 }
-            }
-            
+            }          
         }
         .fantasies__sliderimgs-secondcontent{
                         
@@ -167,8 +160,7 @@ $screen-lg-max: 1200px;
                 img{
                     max-width: 280px;
                 }
-            }
-                        
+            }                      
             .fantasies__sliderimg-04{
                 img{
                     max-width: 280px;
@@ -209,7 +201,6 @@ $screen-lg-max: 1200px;
         margin-bottom: 160px;     
     }
 }
-
 @media (max-width: 1113px) {
      .completed-projects__topblock {
         .completed-projects__left-slider{
@@ -412,15 +403,13 @@ $screen-lg-max: 1200px;
         .tap__slider-content{
             margin-right: 45px;
         }
-    }
-     
+    }    
     .projects__slider-content{
         .slick-slider {
             overflow: hidden;
             max-width: 652px;
         }
     }
-
     .online__control-video {
         img{
             max-width: 500px;
@@ -430,9 +419,7 @@ $screen-lg-max: 1200px;
                 padding: 19px;
             }
         }
-    }
-
-        
+    }       
     .type-of-repair__blocks .type-of-repair__blocks-item {
         img{
             max-width: 250px;  
@@ -451,14 +438,12 @@ $screen-lg-max: 1200px;
             }
         }
     }
-
     .type-of-repair__inner 
     .type-of-repair__block-container 
     .type-of-repair__order-measurer-container 
     .type-of-repair__order-inner{
         flex-direction: column;
     }
-
     .type-of-repair__inner 
     .type-of-repair__block-container 
     .type-of-repair__order-measurer-container 
@@ -470,11 +455,10 @@ $screen-lg-max: 1200px;
     .type-of-repair__order-measurer-container 
     .type-of-repair__order-left 
     .type-of-repair__order-number-circle {
-            div{
-                max-width: 450px;
-            }
+        div{
+            max-width: 450px;
+        }
     }
-
     .type-of-repair__inner 
     .type-of-repair__block-container 
     .type-of-repair__order-measurer-container 
@@ -544,7 +528,6 @@ $screen-lg-max: 1200px;
             justify-content: end;
         }
     }
-
     .fantasies__sliderimgs-content {
         .fantasies__sliderimgs-firstcontent{
             
@@ -552,14 +535,12 @@ $screen-lg-max: 1200px;
                 img{
                     max-width: 200px;
                 }
-            }
-                        
+            }                     
             .fantasies__sliderimg-02{
                 img{
                     max-width: 200px;
                 }
-            }
-            
+            }      
         }
         .fantasies__sliderimgs-secondcontent{
             margin-top: 25px;                     
@@ -567,8 +548,7 @@ $screen-lg-max: 1200px;
                 img{
                     max-width: 200px;
                 }
-            }
-                        
+            }                  
             .fantasies__sliderimg-04{
                 img{
                     max-width: 200px;
@@ -634,7 +614,6 @@ $screen-lg-max: 1200px;
         padding: 0 70px;
     }
  }
-
  @media (max-width: 888px) {
      .completed-projects__topblock{
          flex-direction: column;
@@ -643,8 +622,7 @@ $screen-lg-max: 1200px;
          .completed-projects__left-slider{
              max-width: 660px;
          }
-     }
-     
+     }  
     .online__control-video {
         img{
             max-width: 500px;
@@ -663,9 +641,7 @@ $screen-lg-max: 1200px;
     }
     .type-of-repair__inner .type-of-repair__form .form-buttom{
         padding: 17px 52px;
-    }
-
-            
+    }          
     .type-of-repair__blocks .type-of-repair__blocks-item {
         img{
             max-width: 200px;  
@@ -694,11 +670,10 @@ $screen-lg-max: 1200px;
     .type-of-repair__order-measurer-container 
     .type-of-repair__order-left 
     .type-of-repair__order-number-circle {
-            div{
-                max-width: 350px;
-            }
+        div{
+            max-width: 350px;
+        }
     }
- 
     .fantasies__sliderimgs-content {
         .fantasies__sliderimgs-firstcontent{
             
@@ -706,14 +681,12 @@ $screen-lg-max: 1200px;
                 img{
                     max-width: 160px;
                 }
-            }
-                        
+            }                    
             .fantasies__sliderimg-02{
                 img{
                     max-width: 160px;
                 }
-            }
-            
+            }         
         }
         .fantasies__sliderimgs-secondcontent{
             margin-top: 25px;                     
@@ -721,8 +694,7 @@ $screen-lg-max: 1200px;
                 img{
                     max-width: 160px;
                 }
-            }
-                        
+            }                    
             .fantasies__sliderimg-04{
                 img{
                     max-width: 160px;
@@ -771,7 +743,6 @@ $screen-lg-max: 1200px;
         padding-left: 30px;
         padding-right: 30px;
     }
-
  }
 
  /* Small devices (tablets, 768px and up) */
@@ -828,7 +799,6 @@ $screen-lg-max: 1200px;
             .submit-app{
                 margin-left: 0;
                 padding: 18px 22px;
-
             }
         }
     }
@@ -972,9 +942,9 @@ $screen-lg-max: 1200px;
     .type-of-repair__order-measurer-container 
     .type-of-repair__order-left 
     .type-of-repair__order-number-circle {
-            div{
-                max-width: 330px;
-            }
+        div{
+            max-width: 330px;
+        }
     }
     .type-of-repair__inner 
     .type-of-repair__block-container 
@@ -1013,8 +983,6 @@ $screen-lg-max: 1200px;
         right: 55px;
     }
 }
-
-
   /* Small devices (tablets, 558px and up) */
 @media (max-width: $screen-sm) {
     .completed-projects{
@@ -1054,7 +1022,6 @@ $screen-lg-max: 1200px;
     .type-of-repair__inner {
         margin: 0px auto 210px;
     }
-
     .tap__slider-img-item{
         img{
             max-width: 750px;
@@ -1112,8 +1079,7 @@ $screen-lg-max: 1200px;
             line-height: 169.8%;
             color: $white;
         }
-    }
-    
+    } 
     .type-of-repair__inner .type-of-repair__form{
         margin: 51px auto;
     }
@@ -1123,22 +1089,22 @@ $screen-lg-max: 1200px;
         margin: 0 20px;
     }
     .type-of-repair__inner .type-of-repair__form .form .form-group {
-            margin-right: 10px;
-            margin-bottom: 20px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        color: $white;
+        label{
+            color: rgba(255, 255, 255, 0.5);
+        }
+        input{
+            width: 100%;
+            background: #181818;
             color: $white;
-            label{
-                color: rgba(255, 255, 255, 0.5);
+            font-size: 18px;
+            &::placeholder{
+                color: #fff;
+                opacity: 1;
             }
-            input{
-                width: 100%;
-                background: #181818;
-                color: $white;
-                font-size: 18px;
-                &::placeholder{
-                    color: #fff;
-                    opacity: 1;
-                }
-            }
+        }
     }
     .type-of-repair__inner .type-of-repair__form .form-group__ckeckbox{
         display: block;
@@ -1177,7 +1143,6 @@ $screen-lg-max: 1200px;
             }
         }
     }
-
     .type-of-repair__inner .type-of-repair__block-container .type-of-repair__order-measurer-container{
         display: none;
     }
@@ -1252,14 +1217,11 @@ $screen-lg-max: 1200px;
         margin-right: 10px;
         height: 110px;     
     }
-        
-    
     .type-of-repair__design .type-of-repair__blocks-item{
         img{
             width: 100%;
         }
     }
-
     .type-of-repair__design .type-of-repair__blocks-list .type-of-repair__blocks-button{
         padding: 15px 50px 15px 50px;
         font-size: 16px;
