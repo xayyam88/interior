@@ -1,0 +1,1386 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+.header{
+    position: relative;
+    height: 100vh;
+}
+.header__menu{
+    background-color: #131313;
+    position: absolute;
+    width: 100%;
+}
+.header__menu-inner{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1720px;
+    padding: 18px 72px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    @include Futura-Demi;
+    color: $brown;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-right: 95px;
+}
+.menu{
+    .menu__list{
+        li{
+        display: inline-block;
+        padding-right: 40px;
+        }
+        a{
+            @include Futura-Book;
+            font-size: 14px;
+            line-height: 16px;
+            color: $white;
+            transition: 0.7s;
+        }
+        a:hover{
+            color: $brown;
+        }
+    }
+}
+.menu__phone{
+    @include Futura-Demi;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: $brown;
+}
+.menu__buttom{
+    padding: 10px 30px;
+    margin-left: 40px;
+    background-color: $brown;
+    cursor: pointer;
+}
+
+.header__bottom{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header__bottom-leftblock{
+    display: flex;
+    width: 70px;
+    background-color: #131313;
+    align-items: center;
+    height: 100%;
+}
+.instagram{
+    @include Futura-Demi;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #E3B873;
+    transform: rotate(90deg);
+    color: $brown;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 47px;
+        height: 1px;
+        background-color: $brown;
+        top: 9px;
+        margin-left: 12px;
+    }
+}
+.header__bottom-rightblock{
+    display: flex;
+    align-items: center;
+    background-image: radial-gradient( rgba(0, 0, 0, 0.2) 0%, #0F0F0F 100%), url(../img/header/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color: $white;   
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+}
+.header__bottom-bginfo{
+    width: 575px;
+    margin-left: 60px;
+    padding-top: 50px;
+    .bginfo-title{
+        font-size: 40px;
+        line-height: 53px;
+        margin-bottom: 19px;
+        span{
+            color: $brown;
+        }
+    }
+    .bginfo-text{
+        @include Futura-Book;
+        margin-bottom: 41px;
+        padding-right: 70px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .bginfo-buttom{
+        margin-top: 55px;
+        buttom{
+            @include Futura-Demi;
+            font-size: 13px;
+            line-height: 15px;
+            text-align: center;
+        }
+        .calculate{
+            padding: 19px 42px;
+            border-radius: 2px;
+            background-color:#E3B873;
+            cursor: pointer;
+        }
+        .submit-app{
+            border: 1px solid $white;
+            padding: 18px 42px;
+            cursor: pointer;
+            border-radius: 2px;
+            margin-left: 20px;
+        }
+    }
+}
+.completed-projects{
+    background-image: url(../img/section-cp/completed-projects-bg.jpg);
+    background-repeat: round;
+}
+.completed-projects__inner{
+    max-width: 1920px;
+    margin: 0 auto -45px;
+    padding-left: 95px;
+}
+.completed-projects__topblock{
+    display: flex;
+    margin-bottom: 95px;
+    padding-top: 95px;
+    justify-content: space-between;
+    .completed-projects__left-slider{
+        max-width: 432px;
+        margin-right: 70px;
+        margin-top: 60px;
+        .projects__slider-content{
+            .slick-dots{
+                padding: 6px 0px 11px 70px;
+            }
+        }
+    }
+}
+.completed-projects__title-content{
+    margin-bottom: 42px;
+    .completed-projects__title{
+        padding-bottom: 30px;
+        max-width: 253px;
+        font-size: 27px;
+        line-height: 37px;
+        letter-spacing: -0.07em;
+        color: $brown;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 92px;
+            height: 1px;
+            background-color: $brown;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+    .completed-projects__subtitle{
+        font-size: 18px;
+        line-height: 29px;
+        color: $white;
+    }
+}
+.completed-projects__bottomblock{
+    text-align: center;
+}
+.projects__slider-item{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;   
+    .projects__slider-item-content{
+        margin-right: 30px;
+        float: left;
+        height: 110px;
+        .projects__slider-title{
+            font-size: 18px;
+            line-height: 25px;
+            color: $brown;
+            padding-bottom: 3px;
+        }
+        .projects__slider-subtitle{
+            display: inline-block;
+            width: 161px;
+            font-size: 15px;
+            line-height: 20px;
+            color: $white;
+        }
+    }
+}
+.slick-track{
+    display: flex;
+    position: relative;
+}
+.slick-slider{
+    overflow: hidden;
+}
+.slider-arrows{
+    position: absolute;
+    bottom: -720px;
+    margin-bottom: 85px;
+}
+.slider-arrows__right{
+    margin-left: 170px;
+}
+.slick-dots {
+	display: flex;	
+	margin: 0;
+	padding: 6px 0px 11px 0px;	
+    list-style-type: none;
+		li {
+			margin: 5px 22px 5px 0;
+		}	
+		button {
+			display: block;
+			width: 10px;
+			height: 10px;
+			padding: 0;			
+			border: none;
+			border-radius: 100%;
+			background: rgba(255, 255, 255, 0.3);		
+			text-indent: -9999px;
+		}	
+		li.slick-active button {
+			background-color: #ffffff;
+		}	
+}
+.tap__slider{
+    position: relative;
+    overflow: hidden;
+    .tap__slider-item{
+        display: block;
+        overflow: hidden;
+        padding: 0;
+    }
+    .slick-dots{
+        position: absolute;
+        top: 0;
+        color: rgba(255, 255, 255, 0.3);
+        .slick-active{
+            color: $brown;
+            font-size: 14px;
+            line-height: 19px;
+            border-bottom: 1px solid $brown;
+        }
+        a{
+            font-size: 14px;
+            line-height: 19px;         
+        }
+        
+    }
+    .slick-list{
+        max-width: 682px;
+    }
+
+    .tap__slider-content{
+        padding: 70px 0px 80px 0px;
+    }
+}
+.tap__slider-img{
+    .slider-arrows{
+        z-index: 9999;
+        width: 54px;
+        height: 54px;
+        top: 270px;
+    }
+}
+.tap__slider-img {
+    .slider-arrows__right{
+        margin-left: 0px;
+        position: relative;
+        display: block;
+        float: right;
+        right: 25px;
+        top: 350px;
+        padding: 2px;
+        cursor: pointer;
+    }
+    .slider-arrows__left{
+        top: 280px;
+        margin-left: 25px;
+        display: none;
+    }
+
+}
+.tap__slider {
+    .tap__slider-content{
+        margin-top: -140px;
+    }
+}
+.online__control-video{
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin-top: -235px;
+    z-index: 99;
+    img{
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+    }
+    .play-icon-bg{
+        .play-icon{
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+            background-color: $brown;
+            padding: 28px;
+            border-radius: 90%;
+            transition: 0.4s;
+            &:hover{
+                box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
+            }
+        }
+    }
+}
+.heading__sections{
+    padding-bottom: 262px;
+}
+
+.type-of-repair{
+    background-image: url(../img/white-line-bg.jpg);
+    background-position: 100% 100%;
+}
+.type-of-repair__inner{
+    display: block;
+    max-width: 1920px;
+    margin: 250px auto 210px;
+    right: 0;
+    left: 0;
+    .type-of-repair__text{
+        @include Futura-Book;
+        text-align: center;
+        max-width: 671px;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+        color: #363636;
+    }
+    .type-of-repair__form{
+        display: flex;
+        max-width: 671px;
+        margin: 91px auto;
+        justify-content: space-around;
+        
+        .form{
+            display: flex;
+            justify-content: space-between;
+            .form-group{
+                margin-right: 57px;
+                label{
+                    @include Futura-Book;
+                    padding-bottom: 4px;
+                    display: block;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: rgba(54, 54, 54, 0.5);
+                }
+                input{
+                    @include Futura-Book;
+                    font-size: 17px;
+                    line-height: 24px;
+                    color: #080808;
+                    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+                    box-sizing: border-box;
+                    padding-right: 85px;
+                    padding-bottom: 4px;
+                }
+            }
+        }
+        .form-buttom{
+            @include Futura-Demi;
+            background: $brown;
+            box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+            border-radius: 2px;
+            padding: 17px 72px;
+            border: none;
+            text-transform: uppercase;
+            color: $white;
+            cursor: pointer;
+        }
+        .form-group__ckeckbox{
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            margin-top: 85px;
+            left: 0;
+            right: 0;
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 28px;
+            cursor: pointer;
+            @include Futura-Book;
+            font-size: 16px;
+            line-height: 22px;
+            color: #181818;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            }
+            /* Hide the browser's default checkbox */
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            }
+            /* Create a custom checkbox */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 18px;
+            width: 18px;
+            background-color: #eee;
+            margin-top: 2px ;
+            }
+            /* On mouse-over, add a grey background color */
+        .container:hover input ~ .checkmark {
+            background-color: #ccc;
+            }
+            /* When the checkbox is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+            background-color: $brown;
+            }
+            /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+            }
+            /* Show the checkmark when checked */
+        .container input:checked ~ .checkmark:after {
+            display: block;
+            }
+            /* Style the checkmark/indicator */
+        .container .checkmark:after {
+            left: 6px;
+            top: 2px;
+            width: 7px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            }
+        }
+    }
+.type-of-repair__block-container{
+    display: block;
+    max-width: 1920px;
+    margin: 150px auto 31px;
+    right: 0;
+    left: 0;
+    .heading__sections{
+        text-align: center;
+        padding-bottom: 31px;
+        .heading__sections-title{
+            color: #181818;
+        }
+    }
+    .type-of-repair__blocks{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 55px;
+        text-align: center;
+        .type-of-repair__blocks-list{
+            background-color: $white;
+            padding: 25px 34px 49px 34px;
+            margin: -125px 31px -10px 31px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+            text-align: left;
+            position: absolute;
+            span{
+                @include Yeseva-One;
+                font-size: 18px;
+                line-height: 35px;
+                color: #363636;
+            }
+            ul {
+                padding-left: 13px;
+                padding-right: 60px;
+                margin-top: 10px;
+                li{
+                    @include Futura-Book;
+                    font-size: 16px;
+                    line-height: 15px;
+                    color: #959595;
+                    list-style-type: disc;
+                    max-width: 190px;
+                    margin-bottom: 1px;
+                    height: 32px;
+                }
+
+            }
+        }
+        .type-of-repair__blocks-button{
+            @include Yeseva-One;
+            background-color: $brown;
+            font-size: 18px;
+            padding: 17px 21px;
+            margin-left: -29px;
+            margin-top: 20px;
+            position: absolute;
+        }
+    }
+    .type-of-repair__order-measurer-container{
+        display: block;
+        max-width: 1920px;
+        margin: 320px auto 31px;
+        right: 0;
+        left: 0;
+        background-image: url(../img/section-tr/type-of-reair-bg.jpg);
+        background-repeat: no-repeat;
+        .type-of-repair__order-inner{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 100px 0 0;               
+        }
+        .type-of-repair__order-left{
+            padding-top: 55px;
+            .type-of-repair__order-number-circle{
+                position: relative;
+                height: 666px;
+                max-width: 700px;
+                border-right: 3px solid $brown;
+                border-left: 3px solid $brown;          
+                border-radius: 90%;
+                left: -255px;
+                div{
+                    left: 500px;
+                    display: flex;
+                    width: 443px;
+                    align-items: center;
+                    .type-of-repair__order-number-content{
+                        background-color: #fff;
+                        width: 80px;
+                        padding: 10px;
+                        margin-right: 10px;
+                        border-radius: 50%;
+                    }
+                    span{
+                        background-color: $brown;
+                        padding: 15px;
+                        border-radius: 50%;
+                        font-size: 18px;
+                        
+                        text-align: center;
+                        @include Yeseva-One;
+                        color: $white;
+                        }
+                    .type-of-repair__order-number-title{
+                        @include Futura-Medium;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #363636;
+                        }
+                    }
+                }
+                .type-of-repair__order-number-circle01{
+                    padding-top: 60px;                 
+                    margin-left: 550px;
+                }                            
+                .type-of-repair__order-number-circle02{
+                    padding-top: 120px;                 
+                    margin-left: 655px;
+                }                                          
+                .type-of-repair__order-number-circle03{
+                    padding-top: 128px;                 
+                    margin-left: 620px;
+                }                                        
+                .type-of-repair__order-number-circle04{
+                    padding-top: 70px;                 
+                    margin-left: 470px;
+                }
+            }
+            .type-of-repair__order-right{
+                margin-top: 130px;
+                margin-left: 25px;
+                
+                .type-of-repair__order__form{
+                    background-image: url(../img/black-bg.jpg);
+                    background-size: cover;
+                    color: #fff;
+                    padding: 30px 55px 80px;
+                    display: block;
+                    max-width: 470px;
+                    .type-of-repair__order__form-title{
+                        @include Futura-Demi;
+                        text-align: center;
+                        font-size: 20px;
+                        line-height: 25px;
+                        color: $white;
+                        padding: 0 60px;
+                        margin-bottom: 39px;
+                    } 
+                    form{
+                        .form-group{
+                            label{
+                                display: block;
+                                @include Futura-Book;
+                                font-size: 15px;
+                                line-height: 30px;
+                                color: rgba(255, 255, 255, 0.5);
+                            }
+                            .form-control{
+                                @include Futura-Medium;
+                                background-color: #131313;
+                                color: $white;
+                                font-size: 18px;
+                                line-height: 25px;
+                                border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+                                padding-bottom: 5px;
+                                margin-bottom: 30px;
+                                padding-right: 60%;
+                                &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                                    color: $white;
+                                    opacity: 1; /* Firefox */
+                                }
+                            }
+                        }
+                        .form-group__ckeckbox{
+                            display: block;
+                            margin-top: -15px;
+                            margin-bottom: 39px;
+                        .container {
+                                    display: block;
+                                    position: relative;
+                                    padding-left: 28px;
+                                    cursor: pointer;
+                                    @include Futura-Book;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    color: $white;
+                                    -webkit-user-select: none;
+                                    -moz-user-select: none;
+                                    -ms-user-select: none;
+                                    user-select: none;
+                                    }
+                                    /* Hide the browser's default checkbox */
+                                .container input {
+                                    position: absolute;
+                                    opacity: 0;
+                                    cursor: pointer;
+                                    height: 0;
+                                    width: 0;
+                                    }
+                                    /* Create a custom checkbox */
+                                .checkmark {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    height: 18px;
+                                    width: 18px;
+                                    background-color: #eee;
+                                    margin-top: 2px ;
+                                    }
+                                    /* On mouse-over, add a grey background color */
+                                .container:hover input ~ .checkmark {
+                                    background-color: #ccc;
+                                    }
+                                    /* When the checkbox is checked, add a blue background */
+                                .container input:checked ~ .checkmark {
+                                    background-color: $brown;
+                                    }
+                                    /* Create the checkmark/indicator (hidden when not checked) */
+                                .checkmark:after {
+                                    content: "";
+                                    position: absolute;
+                                    display: none;
+                                    }
+                                    /* Show the checkmark when checked */
+                                .container input:checked ~ .checkmark:after {
+                                    display: block;
+                                    }
+                                    /* Style the checkmark/indicator */
+                                .container .checkmark:after {
+                                    left: 6px;
+                                    top: 2px;
+                                    width: 7px;
+                                    height: 10px;
+                                    border: solid white;
+                                    border-width: 0 2px 2px 0;
+                                    -webkit-transform: rotate(45deg);
+                                    -ms-transform: rotate(45deg);
+                                    transform: rotate(45deg);
+                                    }
+                                }
+                                .form-buttom{
+                                   @include Futura-Demi;
+                                    background:#E3B873;
+                                    box-shadow: 0px 15px 15px
+                                    rgba(227,184,115,0.15);
+                                    border-radius: 2px;
+                                    padding: 17px 22px;
+                                    border: none;
+                                    text-transform: uppercase;
+                                    color:#fff;
+                                    cursor: pointer;
+                                    float: right;
+                                    margin-right: -12px;
+                                }
+                        }                 
+                }
+                .type-of-repair__help-save{
+                    display: flex;
+                    align-items: center;           
+                    img{
+                        padding-top: 25px;
+                    }
+                    span{
+                        @include Futura-Demi;
+                        width: 230px;
+                        font-size: 20px;
+                        line-height: 25px;
+                        color: #E3B873;
+                        text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+                    }
+                }
+            }
+        }
+    }
+}
+.your-fantasies{
+    background-image: radial-gradient(rgba(0,0,0,0.2) 0%, #0F0F0F 100%), url(../img/section-yf/our-fantasies-bg.png);
+    background-position: cover;
+    background-repeat: round;
+    margin-bottom: 150px;
+    max-height: 864px;
+}
+.your-fantasies__wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1920px;
+    overflow: initial;
+    .your-fantasies__title{
+        @include Yeseva-One;
+        margin-top: 137px;
+        font-size: 27px;
+        line-height: 37px;
+        text-transform: uppercase;
+        color: $brown;
+        padding: 0px;
+        margin-left: 75px;
+        position: absolute;
+        max-width: 351px;
+    }
+    .slick-active{
+        .pager__item{
+            text-decoration: underline;
+            color: $brown;
+        }
+    }
+    .slick-dots{
+        position: absolute;
+        margin-top: -650px;
+        margin-left: 80px;
+        padding: 0;
+        flex-direction: column;
+        color: $white;
+        .pager__item{
+            @include Proxima-Nova;
+            font-size: 20px;
+            line-height: 34px;
+            text-transform: none;
+            cursor: pointer;
+        }
+    }
+    .fantasies__slider{
+        margin-top: -115px;
+    }
+}
+.fantasies__sliderimgs-content{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 90px;
+    .fantasies__sliderimgs-firstcontent{
+        margin-top: 70px;
+        margin-right: 30px;
+        .fantasies__sliderimg-01{
+            margin-bottom: 31px;
+        }
+    }
+    .fantasies__sliderimgs-secondcontent{
+        .fantasies__sliderimg-03{
+            margin-bottom: 31px;
+        }
+    }
+}
+.design-project{
+    background-image: url(../img/white-line-bg.jpg);
+    background-position: 100% 100%;
+    .type-of-repair__inner{
+        margin: 20px auto 210px;
+    }
+    .type-of-repair__blocks{
+        position: absolute;
+        .type-of-repair__blocks-item{
+            display: block;
+        }
+    }
+}
+.type-of-repair__design{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px;
+    text-align: center;
+    margin-bottom: -440px;
+    flex-wrap: wrap;
+    .type-of-repair__blocks-list{
+        background-color: $white;
+        padding: 25px 134px 49px 34px;
+        margin: -125px 31px -10px 31px;
+        box-shadow: 10px 10px 20px rgba(0,0,0,0.03);
+        text-align: left;
+        position: absolute;
+        .type-of-repair__blocks-button{
+            background-color: $brown;
+            @include Yeseva-One;
+            font-size: 18px;
+            padding: 17px 90px 17px 21px;
+            margin-left: -34px;
+            margin-top: 20px;
+            position: absolute;
+        }
+        span{
+            @include Yeseva-One;
+            font-size: 18px;
+            line-height: 35px;
+            color: #363636;
+        }
+        ul{
+            li{
+                @include Futura-Book;
+                font-size: 16px;
+                line-height: 30px;
+                color:#959595;
+                list-style-type: disc;
+                width: 163px;
+            }
+        }
+    }
+}
+.our-clients{
+    background-image: url(../img/black-bg.jpg);
+    background-position: 100% 100%;
+    padding: 0 100px;
+    margin-bottom: 150px;
+    margin-top: 300px;
+    padding-bottom: 150px;
+    .our-clients__content{
+        max-width: 1920px;
+        margin: 0 auto;
+        padding-top: 526px;
+        .our-clients__title{
+        span{
+            @include Futura-Demi;
+            color: $white;
+            font-size: 15px;
+            line-height: 21px;
+            text-transform: uppercase;
+        }
+        .completed-projects__title{
+            margin-top: 18px;
+            max-width: 153px;
+            font-size: 27px;
+            line-height: 37px;
+            letter-spacing: -0.07em;
+            color: $brown;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 92px;
+                height: 1px;
+                background-color: $brown;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+        }
+    }
+
+}
+.our-clients__inner{
+    display: flex;
+    justify-content: space-between;
+    .clients__leftslider{
+        margin-top: 92px;
+            .slider-number{
+                @include Yeseva-One;
+                color: $white;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                margin-bottom: 22px;
+            }
+            .clients__slider-title{
+                font-size: 15px;
+                line-height: 23px;
+                text-transform: uppercase;
+                color: $brown;
+                max-width: 220px;
+                margin-bottom: 16px;
+            }
+            .clients__slider-text{
+                font-size: 15px;
+                line-height: 25px;
+                color: $white;
+                @include Futura-Book;
+                max-width: 325px;
+            }
+            .slick-dots{
+                margin-top: 80px;
+                text-align: center;
+                margin-left: 65px;
+            }
+        }
+        .clients__slider__arrows{
+            position: absolute;
+        }
+        .clients__slider__left-arrows{
+            margin-top: 373px;
+        }
+        .clients__slider__right-arrows{
+            margin-left: 266px;
+            margin-top: 90px;
+        }
+    }
+}
+.our-clients__rightslider{
+    max-width: 650px;
+    .clients__rightslider{
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .slick-dots{
+        padding: 0;
+        margin-bottom: 30px;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        .pager__item{
+            @include Futura-Book;
+            font-size: 15px;
+            line-height: 18px;
+            color: rgba(254, 255, 255, 0.3);
+            text-transform: none;
+            cursor: pointer;
+            h3{
+                @include Yeseva-One;
+                font-size: 15px;
+                line-height: 21px;
+                text-transform: uppercase;
+                border-bottom: 1px solid $brown;
+                display: inline-block;
+                opacity: .7;
+                padding-bottom: 1px;
+                margin-bottom: 6px;
+            }
+        }
+        li{
+            margin: 20px 0px;
+            width: 180px;
+            padding-right: 5px;
+        }
+        .slick-active{
+            .pager__item{
+                color: $white;
+                h3{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.our-team__inner{
+    margin-top: 95px;
+    .heading__sections{
+        margin-bottom: 80px;
+        padding: 0;
+        text-align: center;
+        .heading__sections-title{
+            margin-bottom: 5px;
+        }
+        .type-of-repair__text{
+            margin-top: 20px;
+            @include Futura-Book;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: center;
+            color: $white;
+            max-width: 476px;
+            margin: 20px auto;
+        }
+    }
+    .our-team__list{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: -320px;
+        .our-team__list-item{
+            display: block;
+            .person-icon{
+                background-color: $brown;
+                position: absolute;
+                padding: 13px;
+                margin: -30px;
+            }
+        }
+        .person-info__content{
+            background-color: $white;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            margin: -90px 20px 0;
+            display: block;
+            position: absolute;
+            .person-info__name{
+                @include Yeseva-One;
+                font-size: 18px;
+                line-height: 25px;
+                color: #181818;
+                text-transform: none;
+                padding-top: 22px;
+            }
+            .person-info__position{
+                @include Futura-Book;
+                font-size: 18px;
+                line-height: 26px;
+                color: #959595;
+            }
+            .info-buttom{
+                @include Yeseva-One;
+                display: block;
+                margin: 24px auto 0px;
+                width: 100%;
+                background-color: $brown;
+                font-size: 13px;
+                line-height: 20px;
+                padding: 13px 24px;
+
+            }
+        }
+    }
+}
+.clients{
+    margin-top: 240px;
+    margin-bottom: 250px;
+    .clients_inner{
+        margin: 0 auto;
+        max-width: 1920px;
+        display: block;
+        .clients_subtitle{
+            @include Futura-Book;
+            text-align: center;
+            max-width: 520px;
+            margin: 0 auto;
+            font-size: 20px;
+            line-height: 34px;
+            align-content: center;
+            color: #363636;                 
+        }
+        .heading__sections{
+            text-align: center;
+            margin-top: 80px;
+            padding-bottom: 35px;
+            .heading__sections-title{
+                color: #181818;
+                font-size: 20px;
+                line-height: 28px;
+            }
+            .type-of-repair__text{
+                @include Futura-Book;
+                font-size: 20px;
+                line-height: 27px;
+                margin: 15px auto;
+                color: #363636;
+                max-width: 386px;
+            }
+        }
+    }
+}
+.customer__reviews{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 90px 130px;
+    .customer__reviews-item{
+        background: $white;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+        padding: 20px 23px;
+        max-width: 376px;
+        .customer__reviews-nameimg-content{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        img{
+            border-radius: 90%;
+            widows: 75px;
+            height: 76px;
+        }
+        .customer__reviews-name{
+            @include Yeseva-One;
+            font-size: 18px;
+            line-height: 23px;
+            color: #181818;
+            margin-left: 20px;
+            margin-top: 8px;
+            padding-right: 25px;
+        }
+        .customer__reviews-text{
+            @include Futura-Book;
+            font-size: 15px;
+            line-height: 180%;
+            color: #959595;
+            text-transform: lowercase;
+            margin-bottom: 60px;
+        }
+        .customer__reviews-shortinfo{
+            display: flex;
+            position: absolute;
+            margin-left: -23px;
+            margin-top: -5px;
+            span{
+                @include Yeseva-One;
+                background-color: $brown;
+                padding: 9px 16px;
+                display: flex;
+                align-items: center;
+                font-size: 17px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: $white;
+                margin-right: 1px;
+                box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+                img{
+                    border-radius: 0px;
+                    margin-right: 15px;
+                    width: 31px;
+                    height: 32px;
+                }
+            }
+
+        }
+    }
+}
+.questions__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -480px;
+    .questions__form-bg{
+        background-image: url(../img/black-bg.jpg);
+        background-position: 100% 100%;
+        display: inline-block;
+        align-self: center;
+        max-width: 882px;
+        padding: 34px 181px;
+        z-index: 9999;
+        .questions__form-title{
+            @include Yeseva-One;
+            text-align: center;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $white;
+            margin-bottom: 45px;
+        }
+        .name-phone__wrap{
+            display: flex;
+            .form-group{
+                margin-right: 140px;
+            }
+        }    
+        .form-group{
+            label{
+                display: block;
+                @include Futura-Book;
+                font-size: 15px;
+                line-height: 20px;
+                color: rgba(255, 255, 255, 0.5);
+            }
+            .form-control-text{
+                padding-right: 350px;
+            }
+            .form-control{
+                @include Futura-Book;
+                background-color:#131313;
+                color:#fff;
+                font-size: 18px;
+                line-height: 25px;
+                border-bottom: 1px solid rgba(255,255,255,0.15);
+                padding-bottom: 5px;
+                margin-bottom: 30px;
+                padding-right: 15px;
+                &::placeholder{
+                    color: $white;
+                    opacity: 1; /* Firefox */
+                }
+            }
+        }
+        .buttom__wrap{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            .form-buttom{                    
+                @include Futura-Demi;
+                background:#E3B873;
+                box-shadow: 0px 15px 15px rgba(227,184,115,0.15);
+                border-radius: 2px;
+                padding: 17px 72px;
+                border: none;
+                text-transform: uppercase;
+                color:$white;
+                cursor: pointer;
+            }
+        }                                 
+        .form-group__ckeckbox{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .container {
+                display: block;
+                position: relative;
+                padding-left: 28px;
+                cursor: pointer;
+                @include Futura-Book;
+                font-size: 16px;
+                line-height: 22px;
+                color: $white;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                }
+                /* Hide the browser's default checkbox */
+            .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+                }
+                /* Create a custom checkbox */
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 18px;
+                width: 18px;
+                background-color: #eee;
+                margin-top: 2px ;
+                }
+                /* On mouse-over, add a grey background color */
+            .container:hover input ~ .checkmark {
+                background-color: #ccc;
+                }
+                /* When the checkbox is checked, add a blue background */
+            .container input:checked ~ .checkmark {
+                background-color: $brown;
+                }
+                /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+                }
+                /* Show the checkmark when checked */
+            .container input:checked ~ .checkmark:after {
+                display: block;
+                }
+                /* Style the checkmark/indicator */
+            .container .checkmark:after {
+                left: 6px;
+                top: 2px;
+                width: 7px;
+                height: 10px;
+                border: solid white;
+                border-width: 0 2px 2px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+.contact{
+    background-image: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url(../img/section-contact/contact-bg.jpg);
+    background-position: 100% 100%;
+    padding-bottom: 65px;
+    .contact__inner{
+        max-width: 1920px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .contact__title-wrap{
+            max-width: 589px;
+            margin-bottom: 40px;
+            .contact__title{
+                @include Yeseva-One;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $brown;
+                margin-top: 280px;
+            }
+            .contact__icons{
+                display: flex;
+                justify-content: center;
+                img{
+                    background-color: $brown;
+                    color: $white;
+                    margin-right: 15px;
+                    border-radius: 50%;
+                    margin-top: 17px;
+
+                }
+            }
+        }
+    }
+}
+.map-responsive{
+    position:relative;
+    height:450px;
+    max-width: 950px;
+    z-index: 3333;
+    margin: 0 auto;
+    text-align: center;
+}
+.map-responsive iframe{
+    left:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    padding: 0 10px;
+}
+@import "media";

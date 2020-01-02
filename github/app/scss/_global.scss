@@ -1,0 +1,116 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/white-line-bg.jpg);
+    background-position: 100% 100%;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+h1 {
+    @include Yeseva-One;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+h2{
+    @include Yeseva-One;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+h3{
+    @include Yeseva-One;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+a{
+    @include Futura-Book;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+button{
+    @include Futura-Demi;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+    color: $white;
+    border: none;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p{
+   @include Futura-Book;
+}
+.down__up{
+    position: absolute;
+    bottom: -38px;
+    background-color: #131313;
+    a{
+        @include Yeseva-One;
+        padding: 32px 80px 31px 40px;
+        color: $white;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        background-image: url(../img/down-up.svg);
+        background-repeat: no-repeat;
+        background-position: 160px 28px;
+    }
+}
+.heading__sections{
+    .heading__sections-title{
+        color: $white;
+        padding-bottom: 16px;
+    }
+    .heading__sections-img{
+        &::before{
+            content: '';
+            position: absolute;
+            width: 32px;
+            height: 1.58px;
+            background-color: $brown;
+            margin-top: 15px;
+            margin-left: -40px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 32px;
+            height: 1.58px;
+            background-color: $brown;
+            margin-top: 15px;
+            margin-left: 8px;
+        }
+
+    }
+}        
+.top-min__line{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 17px;
+    &::before {
+        content:'';
+        position:absolute;
+        width: 55px;
+        height: 3px;
+        background-color:#E3B873;
+
+    }
+}
